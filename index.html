@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangali Da Dhabha</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            height: 100vh;
+            width: 100vw;
+            overflow: none;
+           
+        }
+        .navContainer {
+            width: 100vw;
+            /*background-color: rgb(113, 113, 190);*/
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(51,51,176,1) 35%, rgba(13,170,234,1) 83%, rgba(7,190,244,1) 91%, rgba(0,212,255,1) 100%);
+            min-height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        nav {
+            width: 100%;
+        }
+        #nav1 {
+            width: 100%;
+            padding: 15px;
+            /*margin-left: 15px;
+            margin-right: 15px;*/
+            list-style: none;
+            font-size: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #Logo {
+            font-size: 30px;
+            color: azure;
+        }
+        a {
+            text-decoration: none;
+            color: azure;
+        }
+        #navItems {
+            display: flex;
+            gap: 40px;
+        }
+        .footerBox {
+            background-color: #D9AFD9;
+            background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+            text-align: center;
+            min-height: 50px;
+        }
+        .footerBox {
+            color: azure;
+            font-size: 20px;
+        }
+        .contentBox {
+            width: 50%;
+            margin: auto;
+            /*border: 1px solid black;*/
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            padding: 40px;
+            box-shadow: 3px 3px 30px black;
+        }
+        .item {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .rightBox {
+            position: relative;
+            overflow: hidden;
+        }
+        .rightBox img{
+            height: 300px;
+            border-radius: 20px;
+            transition: all 0.6s linear 0s;
+        }
+        .rightBox img:hover{
+            transform: scale(1.2);
+        }
+        .leftBox {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .leftBox h2 {
+            font-size: 2rem;
+        }
+        .ingBox {
+            font-size: 1.1rem;
+        }
+        .recipeBox {
+            font-size: 1.1rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navContainer">
+                <nav>
+                    <ul id="nav1">
+                        <li>
+                            <p id="Logo">Bangali Da Dhaba</p>
+                        </li>
+                        <li>
+                            <div id="navItems">
+                                <a href="#">Home</a>
+                                <a href="#">Contact</a>
+                                <a href="#">About</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="contentBox">
+                <!-- item 1 -->
+                <section>
+                    <div class="item">
+                        <div class="leftBox">
+                            <!-- Heading -->
+                            <h2>Fish Curry</h2>
+                            <div>
+                                <h3>Ingredients</h3>
+                                <ul class="ingBox">
+                                    <li>Fish</li>
+                                    <li>Oil</li>
+                                    <li>Potato</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Recipe</h2>
+                                <ol class="recipeBox">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ullam.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                </ol>
+                            </div>
+                           
+                           
+                        </div>
+                        <div class="rightBox">
+                            <img src="Fish Curry01.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <div class="item">
+                        <div class="leftBox">
+                            <!-- Heading -->
+                            <h2>Chicken Egg Roll</h2>
+                            <div>
+                                <h3>Ingredients</h3>
+                                <ul>
+                                    <li>Fish</li>
+                                    <li>Oil</li>
+                                    <li>Potato</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Recipe</h2>
+                                <ol>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ullam.</li>
+                                    <li>Lorem ipsum dolor sit.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                </ol>
+                            </div>
+                           
+                           
+                        </div>
+                        <div class="rightBox">
+                            <img src="chicken-egg-roll-recipe-main-photo.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footerBox">
+                <p>
+                    Copyright &copy; Bangali Da Dhaba Pvt Ltd 2023 All Rights Reserved
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
